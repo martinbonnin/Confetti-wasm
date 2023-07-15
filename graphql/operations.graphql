@@ -1,0 +1,16 @@
+query GetConferenceData {
+    sessions(first: 200) {
+        nodes {
+            id
+            title
+            startsAt
+            speakers {
+                name
+                photoUrl
+            }
+        }
+    }
+    config {
+        name
+    }
+}
